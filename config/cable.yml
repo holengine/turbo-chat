@@ -1,0 +1,10 @@
+development:
+  adapter: async
+
+test:
+  adapter: async
+
+production:
+  adapter: redis
+  url: redis://chat.borissoff.ru:6379
+  channel_prefix: instatalk_production
