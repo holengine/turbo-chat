@@ -26,3 +26,5 @@
 .DS_Store
 
 /vendor/bundle
+
+/config/secrets.yml
