@@ -188,10 +188,6 @@ GEM
       sprockets (> 3.0)
       sprockets-rails
       tilt
-    spring (4.1.1)
-    spring-watcher-listen (2.1.0)
-      listen (>= 2.7, < 4.0)
-      spring (>= 4)
     sprockets (4.2.0)
       concurrent-ruby (~> 1.0)
       rack (>= 2.2.4, < 4)
@@ -237,8 +233,6 @@ DEPENDENCIES
   rails (~> 7.0.4)
   redis
   sass-rails
-  spring
-  spring-watcher-listen
   turbolinks
   tzinfo-data
   uglifier
