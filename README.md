@@ -1,24 +1,33 @@
-# README
+<p align="center">
+  <img src="https://i.imgur.com/RwMTIdx.png" style="image-rendering: pixelated;" "alt="logo" width="20%"/>
+</p>
+<h1 align="center">
+  Chat
+  <img src="https://img.shields.io/badge/Ruby-3.1.2-brightgreen" style="image-rendering: pixelated;" "alt="logo" width="8%"/>
+  <img src="https://img.shields.io/badge/Rails-7.0.4-blue" style="image-rendering: pixelated;" "alt="logo" width="8%"/>
+</h1>
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## Introduction
 
-Things you may want to cover:
+Fast chat application with live users tracking to communicate with friends. No need to register, just open app, create room and invite friends!
 
-* Ruby version
+### Instructions
 
-* System dependencies
 
-* Configuration
+```bash
+$ bundle
+$ rails db:create
+$ rails db:migrate
+$ rails s
+```
 
-* Database creation
+### Database in production
+In the `production` environment, you must specify the database login and password in the environment variables `DATABASE_NAME`, `DATABASE_USERNAME` and `DATABASE_PASSWORD` or specify explicitly in `config/database.yml`:
 
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+```
+production:
+  <<: *default
+  database: #Your database name
+  username: #Your database username
+  password: #Your database password
+```
